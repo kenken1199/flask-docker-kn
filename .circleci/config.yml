@@ -20,7 +20,7 @@ jobs:
     steps:
       - checkout:
           path: ~/flask-docker-kn
-      - run: pip install flask
+      - run: sudo pip install flask
       - run: 
           name: test 
           command: exec python flask-test.py
