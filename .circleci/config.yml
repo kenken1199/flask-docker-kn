@@ -10,7 +10,7 @@ jobs:
     working_directory: ~/flask-docker-kn/app
     steps:
       - checkout:
-        path: ~/flask-docker-kn
+          path: ~/flask-docker-kn
       - run: pip install flask
   
   test:
@@ -19,7 +19,7 @@ jobs:
     working_directory: ~/flask-docker-kn/app
     steps:
       - checkout:
-        path: ~/flask-docker-kn
+          path: ~/flask-docker-kn
       - run: pip install flask
       - run: 
           name: test 
