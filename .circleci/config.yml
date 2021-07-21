@@ -9,8 +9,7 @@ jobs:
       - image: circleci/python:3.6.2-stretch-browsers
     working_directory: ~/flask-docker-kn/app
     steps:
-      - checkout:
-          path: ~/flask-docker-kn
+      - checkout
       - run: pip install flask
   
   test:
@@ -18,8 +17,7 @@ jobs:
       - image: circleci/python:3.6.2-stretch-browsers
     working_directory: ~/flask-docker-kn/app
     steps:
-      - checkout:
-          path: ~/flask-docker-kn
+      - checkout
       - run: sudo pip install flask
       - run: 
           name: test 
